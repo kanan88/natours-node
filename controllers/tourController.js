@@ -2,8 +2,6 @@ const Tour = require('../models/tourModel');
 
 exports.getAllTours = async (req, res) => {
   try {
-    console.log(req.query);
-
     // BUILD QUERY
     // 1A) Filtering
     const queryObj = { ...req.query };
